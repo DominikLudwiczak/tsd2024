@@ -1,0 +1,15 @@
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/bin/Debug/net8.0/ProblemChallenge
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/bin/Debug/net8.0/ProblemChallenge.deps.json
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/bin/Debug/net8.0/ProblemChallenge.runtimeconfig.json
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/bin/Debug/net8.0/ProblemChallenge.dll
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/bin/Debug/net8.0/ProblemChallenge.pdb
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.AssemblyInfoInputs.cache
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.AssemblyInfo.cs
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.csproj.CoreCompileInputs.cache
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.sourcelink.json
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.dll
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/refint/ProblemChallenge.dll
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.pdb
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ProblemChallenge.genruntimeconfig.cache
+/Users/dominikludwiczak/Library/CloudStorage/OneDrive-put.poznan.pl/Masters/Semestr 1/Software Dev/tsd2024/01-Introduction/obj/Debug/net8.0/ref/ProblemChallenge.dll
