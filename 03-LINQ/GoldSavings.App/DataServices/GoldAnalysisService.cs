@@ -12,22 +12,30 @@ namespace GoldSavings.App.Services
         }
         public List<GoldPrice> GetAveragePrice(List<int> years)
         {
-            return _goldPrices.Where(x => years.Contains(x.Date.Year)).GroupBy(x => x.Date.Year)
-                .Select(x => new GoldPrice()
+            return (from price in _goldPrices
+                where years.Contains(price.Date.Year)
+                group price by price.Date.Year into g
+                select new GoldPrice()
                 {
-                    Date = new DateTime(x.Key, 1, 1),
-                    Price = x.Average(y => y.Price)
+                    Date = new DateTime(g.Key, 1, 1),
+                    Price = g.Average(x => x.Price)
                 }).ToList();
         }
         
         public List<GoldPrice> Top3GoldPrices()
         {
-            return _goldPrices.Where(price => price.Date >= DateTime.Now.AddYears(-1)).OrderByDescending(p => p.Price).Take(3).ToList();
+            return (from price in _goldPrices
+                where price.Date >= DateTime.Now.AddYears(-1)
+                orderby price.Price descending
+                select price).Take(3).ToList();
         }
         
         public List<GoldPrice> Bottom3GoldPrices()
         {
-            return _goldPrices.Where(price => price.Date >= DateTime.Now.AddYears(-1)).OrderBy(p => p.Price).Take(3).ToList();
+            return (from price in _goldPrices
+                where price.Date >= DateTime.Now.AddYears(-1)
+                orderby price.Price
+                select price).Take(3).ToList();
         }
         
         public List<GoldPrice> EarnedMoreThan(DateTime buyDate, int percentage, DateTime endDate)
@@ -41,7 +49,7 @@ namespace GoldSavings.App.Services
             }
             
             var threshold = startingPrice.Price * (100.0 + percentage) / 100.0;
-            Console.WriteLine(endDate);
+            
             return prices.Where(x => x.Date.Year <= endDate.Year && x.Date.Month <= endDate.Month &&
                                                  x.Price > threshold).ToList();
         }
