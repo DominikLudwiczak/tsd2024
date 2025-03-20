@@ -16,6 +16,10 @@ class Program
         {
             var startDate = new DateTime(year, 01, 01);
             var endDate = new DateTime(year, 12, 31);
+            if(year == DateTime.Now.Year)
+            {
+                endDate = DateTime.Now;
+            }
             goldPrices.AddRange(dataService.GetGoldPrices(startDate, endDate).GetAwaiter().GetResult());
         }
         
@@ -56,14 +60,6 @@ class Program
         
         // Task 2
         Func<int, bool> isLeapYear = year => (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
-        
-        // Create your own generic collection, which acts as a list with some randomization. It should
-        // contain a set of methods:
-        // a. Add (element) – adds an element to the list either at the beginning or at the end, it
-        // depends on the random factor
-        // b. Get (int index) - returns element which is placed at maximum on the position index in
-        // the list, but the exact index shall be taken by random
-        // c. IsEmpty - returns true if the collection does not have elements; otherwise, it is false.
         
         RandomizedList<int> randomList = new RandomizedList<int>();
         randomList.Add(1);
