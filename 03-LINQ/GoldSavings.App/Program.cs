@@ -53,5 +53,25 @@ class Program
         Console.WriteLine($"Retrived prices from XML file: {loadedPrices.Count}");
         
         Console.WriteLine("\nGold Analyis Queries with LINQ Completed.");
+        
+        // Task 2
+        Func<int, bool> isLeapYear = year => (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+        
+        // Create your own generic collection, which acts as a list with some randomization. It should
+        // contain a set of methods:
+        // a. Add (element) – adds an element to the list either at the beginning or at the end, it
+        // depends on the random factor
+        // b. Get (int index) - returns element which is placed at maximum on the position index in
+        // the list, but the exact index shall be taken by random
+        // c. IsEmpty - returns true if the collection does not have elements; otherwise, it is false.
+        
+        RandomizedList<int> randomList = new RandomizedList<int>();
+        randomList.Add(1);
+        randomList.Add(2);
+        randomList.Add(3);
+        randomList.Add(4);
+        
+        Console.WriteLine($"Is list empty: {randomList.IsEmpty()}");
+        Console.WriteLine($"Element: {randomList.Get(3)}");
     }
 }
